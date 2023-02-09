@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("Bakgrundsbild.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 2px;
+  position: relative;
+  width: 1200px;
+  margin: auto;
+}
+.bildFörstaSida {
+  background-image: url("FörstaSidaBild.png");
+}
+div.header {
+  font-size: 30px;
+}
+.header {
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: rgb(11, 169, 177);
+  opacity: 0.3;
+}
+header a {
+  font-size: large;
+}
+.header > div {
+  background-color: #f1f1f1;
+  width: auto;
+  margin: auto;
+  text-align: bottom, left;
+  line-height: 75px;
+  font-size: 30px;
+}
+.main {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: rgb(3, 157, 14);
+  opacity: 0.3;
+}
+.main > div {
+  background-color: #dab40b;
+  width: auto;
+  margin: Auto;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.footer {
+  display: flex;
+  height: 60px;
+  align-items: baseline;
+  background-color: rgb(11, 169, 177);
+  opacity: 0.3;
+}
+.footer > div {
+  background-color: #da0b0b;
+  width: auto;
+  margin: Auto;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
