@@ -1,0 +1,133 @@
+/* GENERAL STYLE */
+html {
+  font-family: "Rubik", sans-serif;
+  color: #444;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+h2 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  margin-top: 20;
+}
+/* Colour 
+
+
+
+*/
+
+/* NAV */
+nav {
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: auto;
+  z-index: 200;
+}
+#navigation {
+  min-width: fit-content;
+  padding: 2%;
+}
+
+/* HEADER  */
+.header--container p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* BODY  */
+
+/* FUNTION  */
+
+/* SECTION */
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  line-height: 1.5;
+  color: #555;
+  font-size: 18px;
+  gap: 20px;
+  background-color: #e5deca;
+}
+.containerFooter {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 1200px;
+  align-items: baseline;
+  background-color: #e5deca;
+}
+.footer h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+.uList {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.footer--left {
+  width: 25%;
+}
+
+.footer--middle--left {
+  width: 25%;
+}
+.footer--middle--right {
+  width: 25%;
+}
+.footer--middle--right {
+  width: 25%;
+}
+.footer--right {
+  width: 25%;
+}
+li {
+  line-height: 1.5;
+  list-style-type: none;
+}
+svg {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 20px;
+}
+.mail--container {
+  display: flex;
+  align-items: center;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.ulFooter {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 50px;
+}
