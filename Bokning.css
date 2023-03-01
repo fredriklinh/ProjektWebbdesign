@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Rubik", sans-serif;
+  color: #444;
+}
+body {
+  background-color: #e5deca;
+}
+nav {
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: auto;
+  z-index: 200;
+}
+.header--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(26, 25, 25, 0.8);
+  opacity: 0.8;
+}
+.loggan {
+  position: start;
+  font-size: 50px;
+  padding-left: 3%;
+  color: #fff;
+}
+.meny--huvud {
+  display: flex;
+  right: 20px;
+  align-items: center;
+  gap: 20px;
+  padding-right: 3%;
+  justify-content: flex-end;
+  min-width: fit-content;
+}
+#navigation {
+  min-width: fit-content;
+  padding: 2%;
+}
+.btnHeader:link,
+.btnHeader:visited {
+  font-size: 20px;
+  font-weight: 600px;
+
+  color: #fff;
+
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+.navigation {
+  min-width: fit-content;
+  padding: 2%;
+}
+header {
+  min-height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)),
+    url(Bilder/pool.jpg);
+  background-size: cover;
+  color: #f7f7f7f7;
+}
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600px;
+  color: #444;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 1200px;
+  align-items: baseline;
+  background-color: #f7f7f7f7;
+}
+.container--inner--left {
+  float: left;
+  width: 40%;
+  background-color: #f7f7f7f7;
+}
+.container--inner--right {
+  float: right;
+  width: 40%;
+  background-color: #f7f7f7f7;
+}
+.header--container {
+  width: 1000px; /*Här vill jag ha flex*/
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.192);
+  border-radius: 9px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 25px;
+  flex: 1 0 auto;
+}
+.header--container--left {
+  margin: auto;
+  text-align: start;
+  min-height: 0;
+  max-height: 2500px;
+}
+.header--container--right {
+  flex: 1 275 150px;
+  margin: auto;
+  min-height: 0;
+  max-height: 2500px;
+}
+input {
+  border-radius: 3px;
+  background-color: #444;
+  color: #f7f7f7f7;
+}
+input,
+select {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f7f7f7f7;
+}
+input::placeholder {
+  color: #f7f7f7f7;
+}
+label {
+  color: #f7f7f7f7;
+}
+.imgLayout {
+  width: 100%;
+  margin-right: 25%;
+  border-radius: 5px;
+  /* mix-blend-mode: color-burn;  ganska ball syntax som tar bort vit bakgrund på bilder*/
+}
+
+.menyPil {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: #f7f7f7f7;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+.menyPil:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+.container--menyPil {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 85vh;
+}
+.menyPilText {
+  /*Lägg till flex och blockad box för att förhindra overflow*/
+  display: flex;
+  justify-content: center;
+  margin-left: -4.2%;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+  color: #f7f7f7f7;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+#sectionMeny {
+  padding: 96px 0;
+  background-color: #f7f7f7f7;
+  height: 150vh;
+}
+.ulMeny {
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+  color: #444;
+}
+.liHuvudmeny {
+  margin-bottom: 5px;
+  border-bottom: 2px #444 dotted;
+  font-size: 26px;
+  line-height: 3;
+}
+.liHuvudmeny span:nth-child(odd) {
+  padding-right: 6px;
+  color: #444;
+}
+.liHuvudmeny span:nth-child(even) {
+  float: right;
+  padding-left: 6px;
+  color: #444;
+}
+.ulMeny span {
+  position: relative;
+  bottom: -7px;
+}
+.boka {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600px;
+  background-color: #228ee6;
+  color: #f7f7f7f7;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+.boka .confirmation {
+  visibility: hidden;
+  width: 260px;
+  background-color: #555;
+  color: #f7f7f7f7;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.boka .confirmation:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.boka .visa {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
