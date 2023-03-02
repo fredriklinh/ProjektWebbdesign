@@ -655,7 +655,8 @@ svg {
     flex-direction: column;
     float: none;
     width: 100%;
-    margin-top: 722px;
+    margin-top: 10px;
+    overflow-x: hidden;
   }
   #footer {
   flex-direction:column-reverse;
