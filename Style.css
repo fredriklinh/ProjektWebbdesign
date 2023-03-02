@@ -528,7 +528,7 @@ svg {
 }
 
 /* MEDIA FÖR MOBIL */
-@media screen and (max-width: 750px) /* Man kan göra flera styck "media screen and (max-width: xxxPX) för att anpassa efter olika IKT:er /Men anpassningen gäller också vid resizing av webläsare */ {
+@media only screen and (min-width: 200px) and (max-width: 767px) /* Man kan göra flera styck "media screen and (max-width: xxxPX) för att anpassa efter olika IKT:er /Men anpassningen gäller också vid resizing av webläsare */ {
   .nav--btn--container {
     display: none;
   }
@@ -657,5 +657,8 @@ svg {
     width: 100%;
     margin-top: 722px;
   }
+  #footer {
+  flex-direction:column-reverse;
+}
 }
 /* ---------- */
