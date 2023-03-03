@@ -661,5 +661,13 @@ svg {
   #footer {
   flex-direction:column-reverse;
 }
+  
+  .ul--footer-öppettider {
+  visibility:hidden;
+}
+.ul--footer-mobil {
+  visibility:visible;
+  margin-top: -350px;
+}
 }
 /* ---------- */
