@@ -472,9 +472,14 @@ h6 {
 /* --------- */
 
 /* Listor */
-.ul--footer {
+.ul--footer-öppettider {
   line-height: 1.5;
   list-style-type: none;
+}
+.ul--footer-mobil {
+  line-height: 1.5;
+  list-style-type: none;
+  visibility: hidden;
 }
 .ulMeny {
   list-style: none;
