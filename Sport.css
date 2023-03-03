@@ -26,6 +26,7 @@ header {
   height: 250px;
   margin-top: 10px;
   margin-bottom: 10px;
+  display:none; /* gömmer infon som sedan visas vid tryck Sport:Focus*/
 }
 
 .liSport {
@@ -51,3 +52,14 @@ ul span {
   position: relative;
   bottom: -5px;
 }
+
+/* Visar sportinfo vid klick på rubrik */
+.Sport:focus + .ulSport {
+  display: block;
+} /* Tydligöra att rubriken är klickbar när musen är över den*/
+.Sport:hover{
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+
