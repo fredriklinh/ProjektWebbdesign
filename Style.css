@@ -307,6 +307,7 @@ svg {
 
 /* MEDIA FÖR MOBIL */
 @media only screen and (min-width: 200px) and (max-width: 767px) /* Man kan göra flera styck "media screen and (max-width: xxxPX) för att anpassa efter olika IKT:er /Men anpassningen gäller också vid resizing av webläsare */ {
+  
   .nav--btn--container {
     display: none;
   }
@@ -381,6 +382,10 @@ svg {
     width: 100%;
     height: 5px;
   }
+  .small-box { /* Ändrar huvudsidans smallbox från display:flex till display:block, sitt originala arv, för att anpassas korrekt till mobilvy*/
+    display:inherit;
+  }
+  
   div.meny--huvud {
     gap: 0.01px; /* försök att minska avståndet mellan navigationsknapparna, då det är väldigt stort*/
     border-style: outset;
