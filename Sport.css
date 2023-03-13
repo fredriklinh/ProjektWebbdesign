@@ -1,0 +1,63 @@
+.header-sport {
+  height: 70vh;
+  position: relative;
+  background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)),
+    url(Bilder/goaaaaaaal.png);
+  background-size: cover;
+  color: #fff;
+}
+
+/* SECTION Sport*/
+.container--sektion--sport {
+  padding: 30px 10px;
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #f7f7f7f7;
+}
+.container-sport-tablå {
+  width: 40%;
+}
+.dagens--datum {
+  color: #555;
+}
+.ulSport {
+  list-style: none;
+  position: relative;
+  font-family: "Sport";
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: none; /* gömmer infon som sedan visas vid tryck Sport:Focus*/
+}
+.liSport {
+  margin-bottom: 20px;
+  border-bottom: 2px;
+  font-size: 26px;
+  line-height: 1.5;
+}
+ul li span:nth-child(odd) {
+  padding-right: 6px;
+}
+ul li span:nth-child(even) {
+  float: right;
+  padding-left: 15px;
+}
+ul span {
+  position: relative;
+  bottom: -5px;
+}
+
+/* Visar sportinfo vid klick på rubrik */
+.Sport:focus + .ulSport {
+  display: block;
+} /* Tydligöra att rubriken är klickbar när musen är över den*/
+.Sport:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  span {
+    display: flex;
+  }
+}
