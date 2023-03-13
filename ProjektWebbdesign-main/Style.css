@@ -1,0 +1,461 @@
+/* GENERAL STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Rubik", sans-serif;
+  color: #555;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+  color: #fff;
+}
+h2 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  margin-top: 20;
+}
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+/* ---------- */
+
+/* NAV / Knappar */
+nav {
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: auto;
+  z-index: 200;
+}
+.nav--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(26, 25, 25, 0.8);
+  color: #fff;
+  opacity: 1.5;
+}
+.btnLoggan:link,
+.btnLoggan:visited {
+  font-size: 40px;
+  font-weight: 600px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 9px;
+}
+.nav--btn--container {
+  display: flex;
+  right: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: fit-content;
+}
+.navbtn:link,
+.navbtn:visited {
+  font-size: 20px;
+  font-weight: 600px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+/* ---------- */
+
+/* HAMBURGER MENY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  background: black;
+  z-index: -1;
+}
+#main-menu {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  margin: 0px;
+  z-index: 9;
+  float: right;
+}
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+#main-menu li {
+  list-style-type: none;
+  font-size: 0.5rem;
+}
+#main-menu a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+#main-menu a:hover {
+  text-decoration: underline;
+}
+#hamburger-input {
+  display: none;
+}
+#hamburger-menu {
+  position: fixed;
+  right: 20px;
+  width: 6vh;
+  height: 6vh;
+  display: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath fill="%23ffffff" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+#hamburger-menu #sidebar-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(26, 25, 25, 0.9);
+  transition: 0.3s;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+#hamburger-menu h3 {
+  color: #fff;
+  font-size: 2.2rem;
+}
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+#hamburger-menu a {
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 0;
+}
+#hamburger-input:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.4;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ---------- */
+
+/* HEADER  ärver alla sidor utom Bokning*/
+.header--container {
+  width: 50%;
+  position: absolute;
+  justify-content: center;
+  flex-direction: row;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header--container--inner {
+  display: inline-block;
+}
+.header--container p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* ---------- */
+
+/*Används i bokning- & sport-sidan*/
+.ulSport {
+  list-style: none;
+  position: relative;
+  font-family: "Sport";
+  display: none; /* gömmer infon som sedan visas vid tryck Sport:Focus*/
+}
+.Sport:focus + .ulSport {
+  display: block;
+} /* Tydligöra att rubriken är klickbar när musen är över den*/
+.Sport:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* ---------- */
+
+/* FOOTER */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  line-height: 1.5;
+  color: #555;
+  font-size: 18px;
+  gap: 20px;
+  background-color: #e5deca;
+}
+.containerFooter {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100%;
+  align-items: baseline;
+  background-color: #e5deca;
+}
+.footer h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400px;
+}
+.ulList {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.footer--left {
+  width: 25%;
+}
+.footer--middle--left {
+  width: 25%;
+}
+.footer--middle--right {
+  width: 25%;
+}
+.footer--middle--right {
+  width: 25%;
+}
+.footer--right {
+  width: 25%;
+}
+/* .mail--container {
+  display: flex;
+  align-items: center;
+} */
+/* --------- */
+
+/* Listor Footer*/
+.ul--footer-öppettider {
+  line-height: 1.5;
+  list-style-type: none;
+}
+.ul--footer-mobil {
+  line-height: 1.5;
+  list-style-type: none;
+  visibility: hidden;
+}
+.ulFooter {
+  list-style-type: none;
+}
+/* ------- */
+
+/* Ikoner Footer*/
+svg {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 20px;
+}
+/* ------- */
+
+/* MEDIA FÖR MOBIL */
+@media only screen and (min-width: 200px) and (max-width: 767px) /* Man kan göra flera styck "media screen and (max-width: xxxPX) för att anpassa efter olika IKT:er /Men anpassningen gäller också vid resizing av webläsare */ {
+  .nav--btn--container {
+    display: none;
+  }
+  #sectionMeny {
+    float: none;
+    width: 100%;
+  }
+  .header--container--inner h1 {
+    font-size: calc(40px);
+  }
+
+  .big-container-meny h2 {
+    font-size: calc(30px);
+  }
+  .big-container-meny li {
+    font-size: calc(15px);
+  }
+  .big--container--top {
+    float: none;
+    width: 100%;
+  }
+
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
+  .container--meny {
+    display: block;
+    float: none; /* objekten får inte hoppa runt o jiddra*/
+    width: 100%; /* för att fylla ut mobil skärmen - Tror inte kodraden behövs för det som är slutet av annat, t.ex. om body omfattas av container, då behöver inte body kodraden*/
+  }
+  .body {
+    float: none;
+    width: 100%;
+  }
+  .header--header--bokning {
+    overflow-x: hidden; /* för att ta bort överflöd från header och ta bort höger/vänster scroll "x axeln"*/
+    overflow-y: hidden; /* y-axeln */
+    float: none;
+    width: 100%;
+  }
+  .meny--huvud {
+    flex-direction: column; /* Navigationlänkarnas uppdelning, "row" inte ett alternativ då jag ännu ej lokaliserat vart avståndet mellan knapparna definieras */
+    place-items: end; /* Navigationslänkarnas position*/
+    float: none;
+    width: 100%;
+  }
+  .liHuvudmeny {
+    float: none;
+    width: 100%;
+  }
+  .ulMeny {
+    float: none;
+    width: 100%;
+  }
+  .container--inner--left--meny {
+    float: none;
+    width: 100%;
+  }
+  .container--inner--right--meny {
+    float: none;
+    width: 100%;
+  }
+
+  .navbtn:link,
+  .navbtn:visited {
+    padding: none;
+    font-size: 10px; /* ändrar om storlek vid mobilskärm*/
+    float: none;
+    width: 100%;
+    height: 5px;
+  }
+  div.meny--huvud {
+    gap: 0.01px; /* försök att minska avståndet mellan navigationsknapparna, då det är väldigt stort*/
+    border-style: outset;
+    border-top: none;
+  }
+  .btnLoggan {
+    /*position:end; /*funkar ej*/
+    font-size: 20px; /*ändrar om loggans storlek vid mobilskärm*/
+    float: none;
+    width: 100%;
+  }
+  .containerFooter {
+    flex-direction: column;
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  .ul--footer-öppettider {
+    visibility: hidden;
+  }
+  .ul--footer-mobil {
+    visibility: visible;
+    margin-top: -350px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 920px) {
+  .container--sektion--huvudsida {
+    float: none;
+    width: 100%;
+  }
+  .container--sektion--huvudsida h2 {
+    font-size: calc(45px);
+  }
+  p {
+    font-size: calc(1rem + 1vw);
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+  .header--bokning {
+    float: none;
+    width: 100%;
+    height: 100vh;
+  }
+  .header--container--bokning {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    float: none;
+    width: 100%;
+    justify-content: center;
+  }
+  .header--container--bokningsinformation--bokning {
+    margin-top: 50%;
+    float: none;
+    width: 100%;
+  }
+  .header--container--layout--bokning {
+    flex-direction: row;
+    float: none;
+    width: 100%;
+  }
+  .container--menyPil {
+    display: none;
+  }
+  .menyPil {
+    display: none;
+  }
+  .menyPil:hover {
+    display: none;
+  }
+  .menyPilText {
+    display: none;
+  }
+  .div.container--menyPil {
+    display: none;
+  }
+}
+/* ---------- */
