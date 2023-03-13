@@ -1,0 +1,46 @@
+.header-huvudsida {
+  height: 75vh;
+  position: relative;
+  background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)),
+    url(Bilder/bowlingThrow.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+/* SECTION Huvudsida*/
+.container--sektion--huvudsida {
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 80%;
+  color: #555;
+  background-color: #e9f4fd;
+}
+.aktuell-post h6 {
+  margin-bottom: 10px;
+}
+.selection-box {
+  align-items: center;
+}
+.aside-aktuellt {
+  flex: 0 0 300px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  margin: 30px 30px;
+  height: 100%;
+  padding: 30px 0;
+}
+.small-box {
+  border: 5px solid black;
+  gap: 20px;
+  display: flex;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
+}
+.text-filler h2 {
+  font-size: 80px;
+  border-bottom: 1px solid #444;
+}
+.text-filler {
+  width: 50%;
+  padding-top: 5px;
+}
